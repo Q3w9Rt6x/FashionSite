@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Tシャツ屋さん課題</title>
+		<script src="main.js"></script>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	</head>
+
+	<body>
+		<div id="mainContent">
+			<div id="itemName">
+				<p>Tシャツ　綿100% メンズ</p>
+			</div>
+
+			<div id="itemPhoto" >
+				<img src="white.png" height="200" />
+			</div>
+			
+			<div id="itemPrice">
+				<p>価格：1,000円 / 枚</p>
+			</div>
+
+			<form> 
+				<lable>色：
+					<select id="color">
+						<option value="白" selected>白</option>
+						<option value="赤">赤</option>
+						<option value="黒">黒</option>
+					</select>
+				</lable>
+
+				<br><br>
+				
+				<label>数量：
+					<select id="quantity">
+						<option value="1" selected>１枚</option>
+						<option value="2">２枚</option>
+						<option value="3">３枚</option>
+						<option value="10">１０枚（まとめ売り価格）</option>
+					</select>
+				</label>
+		
+				<br><br>
+				
+				<label>サイズ：
+					<input type="radio" name="size" value="S" checked>S
+					<input type="radio" name="size" value="M">M
+					<input type="radio" name="size" value="L">L
+					<input type="radio" name="size" value="XL">XL
+				</label>
+				
+				<br><br>
+
+				<label>使用ポイント：
+					<input type="text" id="point" size="5" value="0"> point
+				</label>
+				
+				<br><br>
+
+				<label>オプション：
+					<input type="checkbox" name="options" value="お急ぎ便">お急ぎ便
+					<input type="checkbox" name="options" value="プレゼント包装">プレゼント包装
+					<input type="checkbox" name="options" value="メッセージカード">メッセージカード
+				</label>
+
+				<br><br>
+
+				<label hidden>メッセージ：
+					<input type="text" id="messeage">
+				</label>
+
+				<br><br>
+
+				<input type="button" id="btn" value="購入">
+			</form>
+		</div>
+	</body>
+</html>
